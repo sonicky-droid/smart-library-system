@@ -1,0 +1,178 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Library Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div>
+                <h1>Smart Library</h1>
+                <p>Management System</p>
+            </div>
+
+            <button onclick="logout()">Logout</button>
+        </header>
+
+
+        <!-- NAVIGATION -->
+        <nav>
+            <ul>
+                <li onclick="showSection('dashboard')">Dashboard</li>
+                <li onclick="showSection('books')">Books</li>
+                <li onclick="showSection('members')">Members</li>
+                <li onclick="showSection('borrow')">Borrow & Return</li>
+                <li onclick="showSection('reports')">Reports</li>
+            </ul>
+        </nav>
+
+
+        <main>
+
+            <!-- DASHBOARD -->
+            <section id="dashboard" class="page-section">
+
+                <h2>Dashboard</h2>
+                <p>Welcome to your library management dashboard.</p>
+
+                <div class="stats">
+
+                    <div class="card">
+                        <h3>Total Books</h3>
+                        <p id="total-books">0</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Available Books</h3>
+                        <p id="available-books">0</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Borrowed Books</h3>
+                        <p id="borrowed-books">0</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Total Members</h3>
+                        <p id="total-members">0</p>
+                    </div>
+
+                </div>
+
+                <div class="recent-books">
+
+                    <h2>Recent Activity</h2>
+
+                    <p>No recent activity yet.</p>
+
+                </div>
+
+            </section>
+
+
+            <!-- BOOKS -->
+            <section id="books" class="page-section">
+
+                <h2>Books</h2>
+
+                <p>Manage books in the library.</p>
+
+                <div class="card">
+
+                    <h3>Book Management</h3>
+
+                    <p>Add, edit, search and remove books from the library.</p>
+
+                    <button onclick="alert('Book management coming next!')">
+                        Add New Book
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- MEMBERS -->
+            <section id="members" class="page-section">
+
+                <h2>Members</h2>
+
+                <p>Manage registered library members.</p>
+
+                <div class="card">
+
+                    <h3>Member Management</h3>
+
+                    <p>View and manage library members.</p>
+
+                    <button onclick="alert('Member management coming next!')">
+                        Add New Member
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- BORROW & RETURN -->
+            <section id="borrow" class="page-section">
+
+                <h2>Borrow & Return</h2>
+
+                <p>Track books that have been borrowed and returned.</p>
+
+                <div class="card">
+
+                    <h3>Borrowing System</h3>
+
+                    <p>Record book borrowing and returns.</p>
+
+                    <button onclick="alert('Borrowing system coming next!')">
+                        Record Transaction
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- REPORTS -->
+            <section id="reports" class="page-section">
+
+                <h2>Reports</h2>
+
+                <p>View useful library statistics and reports.</p>
+
+                <div class="card">
+
+                    <h3>Library Reports</h3>
+
+                    <p>Reports and analytics will appear here.</p>
+
+                    <button onclick="alert('Reports coming next!')">
+                        Generate Report
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
